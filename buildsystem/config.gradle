@@ -1,0 +1,51 @@
+
+ext {
+
+    GOOGLE_SUPPORT_LIBRARY_VERSION ="24.1.1"
+    DAGGER_VERSION = '2.0.1'
+
+    android = [
+            buildToolsVersion : "23.0.3",
+            minSdkVersion : 15,
+            targetSdkVersion : 22,
+            compileSdkVersion : 23]
+
+
+    dependencies = [
+                "design"              : "com.android.support:design:${GOOGLE_SUPPORT_LIBRARY_VERSION}",
+                "appcompat-v7"        : "com.android.support:appcompat-v7:${GOOGLE_SUPPORT_LIBRARY_VERSION}",
+                "recyclerview-v7"     : "com.android.support:recyclerview-v7:${GOOGLE_SUPPORT_LIBRARY_VERSION}",
+                "cardview-v7"         : "com.android.support:cardview-v7:${GOOGLE_SUPPORT_LIBRARY_VERSION}",
+                "support-v4"          : "com.android.support:support-v4:${GOOGLE_SUPPORT_LIBRARY_VERSION}",
+                "nineoldandroids"     : "com.nineoldandroids:library:2.4.0",
+                "picasso"             : "com.squareup.picasso:picasso:2.5.2",
+                "photoview"           : "com.github.chrisbanes.photoview:library:1.2.3",
+                "retrofit"            : "com.squareup.retrofit:retrofit:2.1.0",
+                "rxandroid"           : "io.reactivex:rxandroid:1.2.1",
+                "rxjava"                : "io.reactivex:rxjava:1.2.0",
+                "okhttp-urlconnection": "okhttp3:okhttp-urlconnection:2.0.0",
+                "okhttp"              : "okhttp3:okhttp:2.3.0",
+                "butterknife"         : "com.jakewharton:butterknife:7.0.1",
+                "otto"                : "com.squareup:otto:1.3.8",
+                "glide"               : "com.github.bumptech.glide:glide:3.7.0",
+                "klog"                : "com.github.zhaokaiqiang.klog:library:1.1.0",
+                "andfix"              : "com.alipay.euler:andfix:0.4.0@aar",
+                "dagger"              : "com.google.dagger:dagger:$DAGGER_VERSION",
+                "dagger-compiler"     : "com.google.dagger:dagger-compiler:$DAGGER_VERSION",
+                "bugtags"              : "com.bugtags.library:bugtags-lib:latest.integration",
+                "leakcanary"           : "com.squareup.leakcanary:leakcanary-android:1.4-beta2",
+                "javax-annotation"     : "org.glassfish:javax.annotation:10.0-b28",
+                "junit"                : "junit:junit:4.12",
+                "networkbench"         : "com.networkbench.newlens.agent.android:nbs.newlens.agent:2.4.2",
+                "growingio"            : "com.growingio.android:vds-android:latest.release@aar",
+                "xkui"                 : "com.xiaoka.ui:xkui:0.1.1-SNAPSHOT",
+                "xkutils"              : "com.xiaoka.utils:xkutils:0.1.3-SNAPSHOT",
+                "xkcommon"             : "com.xiaoka.common:xkcommon:0.1.2-SNAPSHOT",
+                "xkdatepick"           : "com.xiaoka.datepick:xiaoka-datepick:1.1.2-SNAPSHOT",
+                "xkqrcode"             : "com.xiaoka.qrcode:xiaoka-qrcode:1.0.3-SNAPSHOT",
+                "flexbox"           : "com.google.android:flexbox:0.1.3",
+                "xkimage"           : "com.xiaoka.image:xkimage:0.1.1-SNAPSHOT",
+                "superrecyclerview"     : "com.malinskiy:superrecyclerview:1.1.4"
+]
+
+}

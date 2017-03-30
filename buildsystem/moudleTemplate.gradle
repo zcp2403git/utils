@@ -1,0 +1,6 @@
+apply from: '../buildsystem/baseTemplate.gradle'
+
+dependencies {
+    compile project(':bindsupport')
+    compile project(':customui')
+}
