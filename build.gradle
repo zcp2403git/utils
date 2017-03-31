@@ -1,55 +1,38 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-apply from: "http://192.168.1.10/xkandroid/xk_support_config/raw/develop/buildsystem/guide/baseProjectGuide.gradle?private_token=6wyj8fHSnJZwxgiGwRov"
-
 buildscript {
     repositories {
-        mavenCentral()
         jcenter()
-        maven {
-            credentials {
-                username "deployment"
-                password "deployment"
-            }
-            url 'http://192.168.1.128:8081/nexus/content/groups/public/'
-        }
+//        maven {
+//            credentials {
+//                username "deployment"
+//                password "deployment"
+//            }
+//            url 'http://192.168.1.128:8081/nexus/content/groups/public/'
+//        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0-alpha2'
-
+        classpath 'com.android.tools.build:gradle:2.3.0'
         // dagger 相关
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
-
         classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.3.0'
-
 //        classpath "com.fernandocejas.frodo:frodo-plugin:0.8.2"
-
         classpath 'me.tatarka:gradle-retrolambda:3.2.0'
-
         classpath 'com.droidtitan:lint-cleaner-plugin:0.3.0'
         // 听运
         classpath 'com.networkbench.newlens.agent.android:agent-gradle-plugin:2.4.2'
-
     }
 }
 
 allprojects {
     repositories {
-        mavenCentral()
         jcenter()
-        maven {
-            credentials {
-                username "deployment"
-                password "deployment"
-            }
-            url 'http://192.168.1.128:8081/nexus/content/groups/public/'
-        }
-        maven { url 'http://192.168.1.128:8081/nexus/content/repositories/android-snapshots/'
-            credentials {
-                username "admin"
-                password "xiaokap-0p-0p-0"
-            }
-        }
-
+//        maven {
+//            credentials {
+//                username "deployment"
+//                password "deployment"
+//            }
+//            url 'http://192.168.1.128:8081/nexus/content/groups/public/'
+//        }
     }
 }
 
